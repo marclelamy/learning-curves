@@ -1,31 +1,29 @@
-# shadcn/ui monorepo template
+context 
 
-This template is for creating a monorepo with shadcn/ui.
+Core Features:
 
-## Usage
+Users can submit and visualize learning curves for different skills/activities
+Multiple ways to create curves: drawing with fingers, inputting data points, or writing functions
+Categories for different types of learning curves (sports, coding, life skills, etc.)
+Front page displaying recent, most submitted, and popular curves
 
-```bash
-pnpm dlx shadcn@latest init
-```
+Interactive Elements:
 
-## Adding components
+Voting/liking system for popular curves
+Users can suggest modifications to existing curves
+Ability to see average learning curves with confidence intervals
+Social media sharing functionality
 
-To add components to your app, run the following command at the root of your `web` app:
+Content Integration:
 
-```bash
-pnpm dlx shadcn@latest add button -c apps/web
-```
+Curated content recommendations based on where users are on the learning curve
+Links to relevant videos, tutorials, and highlights
+YouTube content suggestions matching user skill levels
+Example categories include skiing, snowboarding, and other activities
 
-This will place the ui components in the `packages/ui/src/components` directory.
+Technical Considerations:
 
-## Tailwind
-
-Your `tailwind.config.ts` and `globals.css` are already set up to use the components from the `ui` package.
-
-## Using components
-
-To use the components in your app, import them from the `ui` package.
-
-```tsx
-import { Button } from "@workspace/ui/components/ui/button"
-```
+Rate limiting to prevent abuse
+No user certification required
+No comments section, focus on likes and sharing
+Simple, focused interface# learning-curves
